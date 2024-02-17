@@ -4,6 +4,105 @@
 Contact
 {% endblock %}
 
+
 {% block content %}
-<h1>The Contact Page 1</h1>
+<style>
+    .banner{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(cback.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .align{
+        position: absolute;
+        top: 25%;
+        text-align: center;
+        transform: translateY(-50%);
+        width: 100%;
+        color: white;
+        line-height: 12px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    h1{
+        font-size: 80px;
+
+    }
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+        top: 25%;
+        text-align: center;
+        transform: translateY(100%);
+        padding: 20px;
+        border: 5px solid red;
+        
+        height: 320px;
+        
+        border-radius: 5px;
+        background: linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0.95));
+        color: white;
+        font-weight: bold;
+    }
+    .add,.pno,.email{
+        width: 300px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 35px;
+        margin: 10px solid black;
+        box-shadow:  0px 5px 5px grey;
+        border-radius: 15px;
+        margin: 30px ;
+        height: 140px;
+    }
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+        border-radius: 15px;
+    }
+    .pno div a{
+        text-decoration: none;
+        color: white;
+    }
+    .email div a{
+        text-decoration: none;
+        color: white;
+
+    }
+    .pno div a:hover{
+        color: red;
+    }
+    .email div a:hover{
+        color: red;
+    }
+
+</style>
+<div class="banner">
+    <div class="align">
+        <h1>Contact <span style="color: red;">US.</span></h1>
+    </div>
+    <div class="container">
+        <h1 class="h1" style="font-size: 50px;">Our Contact <span style="color: red;">Information</span></h1>
+        <div class="main">
+            <div class="add">
+                <div ><span style="color: red;">Address</span></div>
+                <div>Plot No-A2, Nirmalya Rd, near Golakhpuri Duplex, Patia, Bhubaneswar, Odisha 751024.</div>
+            </div>
+            <div class="pno">
+                <div ><span style="color: red;">Phone</span></div>
+            <div ><a href="#">+91 7873722984</a></div>
+            </div>
+            <div class="email">
+                <div ><span style="color: red;">Email</span> </div>
+                <div ><a href="#">support@thinkwebhub.com</a></div>
+            </div>
+
+        </div>
+        
+        
+    </div>
+</div>
 {% endblock %}

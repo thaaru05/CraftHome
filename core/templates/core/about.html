@@ -1,0 +1,120 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+About
+{% endblock %}
+
+
+{% block content %}
+
+<div>
+    <span style="color: white;">
+        <br>
+    <h1 class="textalignment" >About<span style="color: red;"> US.</span></h1>
+<i><p style="margin: 90px;">Welcome to CraftHome, where we are dedicated to preserving traditional crafts and cultural heritage. 
+    Our mission is to celebrate the rich tapestry of diverse cultures by providing a platform for artisans and craftsmen to showcase their timeless creations. At CraftHome we believe that the essence of a community lies in its traditions, and we are committed to ensuring that these traditions endure and thrive.
+     </p>
+     <h3 class="textalignment">Our <span style="color: red;">vision</span></h3>
+     <p style="margin: 90px;">We envision a world where traditional crafts and cultural heritage are not just preserved but also celebrated. Through our e-commerce platform, we aim to bridge the gap between artisans and enthusiasts, fostering a global community that appreciates and supports the beauty of handmade and culturally significant products.
+     </p>
+     <h3 class="textalignment">Our <span style="color: red;">Commitment</span></h3>
+    <div class="main">
+        <div class="abc">
+            <h5><span style="color: red;">Preserving Heritage:</span></h5>
+         <p>We are passionate about safeguarding traditional crafts that have been passed down through generations. By providing a marketplace for artisans, we contribute to the continuation of age-old techniques and skills.
+        </p>
+         </div>
+         <div class="abc">
+            <h5><span style="color: red;">Empowering Artisans:</span></h5>
+            <p> Our platform is designed to empower artisans economically by connecting them directly with a global audience. We ensure fair compensation for their craftsmanship, fostering sustainable livelihoods.
+            </p>
+         </div>
+         <div class="abc">
+            <h5><span style="color: red;">Cultural Diversity:</span></h5>
+            <p>CraftHome is a melting pot of cultures. We curate a diverse range of products, each telling a unique story and representing the rich heritage of different communities around the world.
+            </p>
+         </div>
+    </div>
+        <div class="main">
+            <div class="abc">
+                <h5><span style="color: red;">Quality and Authenticity: </span></h5>
+                <P>We uphold the highest standards of quality and authenticity. Every product on our platform is carefully curated, ensuring that it not only reflects the cultural heritage but also meets the expectations of our discerning customers.
+                </P></i>
+             </div>
+             <div class="abc">
+                <h5><span style="color: red;">Handcrafted Treasures: </span></h5>
+                <p>Handcrafted Treasures: Discover a curated collection of handcrafted items, each telling a story of tradition, skill, and passion. 
+                </P></i>
+             </div>
+             <div class="abc">
+                <h5><span style="color: red;">Cultural Artifacts: </span></h5>
+                <P>Immerse yourself in the cultural heritage of various regions with our carefully selected artifacts that embody the spirit of their origins.
+                </P></i>
+             </div>
+       </div>            
+
+    <div  class="textalignment">
+        <b><i>
+            <P>Thank you for being a part of our mission to keep heritage alive.
+            </P>
+            <P>CraftHome Celebrating Tradition, Empowering Artisans.</P></span>
+        </i></b>
+    </div>
+
+</div>
+
+<style>
+    body{
+        font-size:x-large;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: black;
+        text-align: justify;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(aboutus2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .textalignment{
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-shadow: 10ch;
+        margin: 20px;
+    }
+    h1{
+        font-size: 80px;
+
+    }
+    .abc{
+        width: 450px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 35px;
+        margin: 10px solid black;
+        box-shadow:  0px 5px 5px grey;
+        border-radius: 15px;
+        margin: 50px ;
+        height: 430px;
+        padding: 10px;
+        transition: 0.3s;
+    }
+    .abc:hover{
+        transform: scale(1.1);
+    }
+    p{
+        text-align: center;
+        line-height: 1.5cm;
+    }
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+        border-radius: 15px;
+    }
+    #navbar{
+        background-color: white;
+    }
+</style>
+
+{% endblock %}
